@@ -1,6 +1,6 @@
 # Contribuer à Amazing AI Tools
 
-Les contributions sont bienvenues 🎉  
+Les contributions sont bienvenues 🎉
 Le but est simple : garder une liste utile, lisible et vraiment utilisée — pas un annuaire géant.
 
 ---
@@ -20,14 +20,22 @@ Le but est simple : garder une liste utile, lisible et vraiment utilisée — pa
 
 ## 📐 Format JSON attendu
 
+Les prompts doivent suivre la structure :
+
+ROLE / CONTEXT / GOAL / FORMAT / INSTRUCTIONS / RULES / {{USERDATA}}
+
+→ Voir la section **“Structure des prompts”** dans le `README.md` pour un exemple complet.
+
 ```json
 {
-  "name": "Nom de l’outil",
-  "category": "agents",
-  "description": "Une phrase claire, concise, en français",
-  "website": "https://...",
-  "pricing": ["free", "freemium", "paid", "open-source"],
-  "tags": ["cloud", "self-host", "local", "no-code"]
+  "id": "nom-unique",
+  "name": "Nom du prompt",
+  "llm": ["gpt-4o", "claude-3.5"],
+  "category": "dev",
+  "labels": ["tag1"],
+  "description_fr": "Description...",
+  "prompt": "Le prompt complet...",
+  "example_input": "Exemple"
 }
 ```
 
@@ -35,17 +43,17 @@ Le but est simple : garder une liste utile, lisible et vraiment utilisée — pa
 
 ## 💡 Règles simples
 
-- Un outil = une PR si possible  
-- Pas de spam, affiliation ou placement marketing déguisé  
-- Description courte, claire, en français  
-- Pas d’emoji dans le JSON  
-- Propose uniquement des outils que tu utilises ou recommandes réellement  
+- Un outil = une PR si possible
+- Pas de spam, affiliation ou placement marketing déguisé
+- Description courte, claire, en français
+- Pas d’emoji dans le JSON
+- Propose uniquement des outils que tu utilises ou recommandes réellement
 
 ---
 
 ## ❓Besoin d’aide ?
 
-- Ouvre une issue  
+- Ouvre une issue
 - Ou viens discuter (Discord bientôt 😉)
 
 Merci d’aider à faire de ce projet une ressource réellement utile 🙏

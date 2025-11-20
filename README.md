@@ -65,6 +65,71 @@ En résumé :
 
 ---
 
+## 🧱 Structure des prompts
+
+Les prompts de l’Atlas suivent tous la même structure pour rester lisibles, réutilisables
+et faciles à adapter dans des outils (agents, workflows, etc.) :
+
+```txt
+ROLE
+Définis qui est l’IA (expertise, posture).
+
+CONTEXT
+Explique la situation, ce que l’IA reçoit, pour qui elle répond.
+
+GOAL
+Objectif clair du prompt (ce qu’on attend comme résultat).
+
+FORMAT
+Structure attendue de la réponse (liste, tableau, sections, JSON, etc.).
+
+INSTRUCTIONS
+Détails pratiques : ton, style, niveau de détail, ce qu’il faut éviter.
+
+RULES
+Contraintes strictes (langue, interdits, limites, validations, etc.).
+
+{{USERDATA}}
+Bloc final qui décrit ce que l’utilisateur doit fournir (idée, texte, code, liste de tâches…).
+```
+
+Dans prompts.json, le champ prompt contient donc un texte structuré
+selon ce modèle, par exemple :
+
+```txt
+ROLE:
+Tu es un investisseur VC très exigeant spécialisé dans les SaaS B2B.
+
+CONTEXT:
+On te soumet une idée de SaaS à analyser rapidement...
+
+GOAL:
+Évaluer la solidité de l'idée et donner une recommandation claire...
+
+FORMAT:
+1/ ...
+2/ ...
+
+INSTRUCTIONS:
+- ...
+
+RULES:
+- ...
+
+{{USERDATA}}
+Idée de SaaS à analyser : {{IDEE_SAAS}}
+
+```
+
+Quand tu proposes un nouveau prompt, essaie de respecter ce format autant que possible.
+Ça permet :
+
+- de comprendre rapidement à quoi il sert
+- de le brancher plus facilement dans des workflows (n8n, agents, etc.)
+- de garder une qualité homogène dans tout l’Atlas
+
+---
+
 ## 🧰 Où voir le rendu ?
 
 L’interface qui consomme ces données est disponible ici :
