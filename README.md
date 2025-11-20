@@ -3,222 +3,88 @@
 ![Contributions](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Status](https://img.shields.io/badge/status-liste%20vivante-orange)
 
-# Amazing AI tools - fr
+# Atlas
 
-> Une sélection d’outils autour de l’IA (LLM, agents, RAG, no-code, etc.), avec un focus pratique.
-> Ressource vivante : les contributions sont les bienvenues ✨
+Atlas est une base de données publique d’outils IA et de prompts, utilisée pour alimenter
+le mini-site : [https://atlas.voidcorp.io](https://atlas.voidcorp.io).
 
----
+- Pas de SaaS caché
+- Pas de tracking invasif
+- Juste des fichiers JSON versionnés sur GitHub
 
-## Légende des labels
-
-- `cloud` – service hébergé
-- `self-host` – installable chez soi / sur serveur
-- `open-source` – code source disponible
-- `no-code` / `low-code` – conçu pour non-dev ou dev pressés
-- `gratuit` – offre gratuite solide
-- `freemium` – gratuit avec limites, plans payants au-delà
-- `payant` – principalement payant / entreprise
+L’objectif : garder une liste **utile, compacte et réellement utilisée**, plutôt qu’un annuaire
+infini impossible à maintenir.
 
 ---
 
-## Sommaire
+## 📂 Structure du dépôt
 
-- [Amazing AI tools - fr](#amazing-ai-tools---fr)
-  - [Légende des labels](#légende-des-labels)
-  - [Sommaire](#sommaire)
-  - [Modèles \& plateformes LLM](#modèles--plateformes-llm)
-  - [IA locales / self-host](#ia-locales--self-host)
-  - [Prompt engineering \& observabilité](#prompt-engineering--observabilité)
-  - [Automatisation \& workflows](#automatisation--workflows)
-  - [Agents \& orchestrateurs](#agents--orchestrateurs)
-  - [Image, vidéo \& audio](#image-vidéo--audio)
-  - [Dev \& no-code assistés par IA](#dev--no-code-assistés-par-ia)
-  - [RAG \& bases vectorielles](#rag--bases-vectorielles)
-  - [Productivité \& assistants généralistes](#productivité--assistants-généralistes)
-  - [Contribution](#contribution)
+Le dépôt contient principalement deux fichiers de données :
+
+- `tools.json`
+  → Liste d’outils IA (frameworks d’agents, automatisation, LLM providers, etc.)
+
+- `prompts.json`
+  → Liste de prompts IA structurés pour des usages concrets (productivité, dev, business…).
+
+Ces fichiers sont consommés par le site `atlas.voidcorp.io` qui les affiche avec une interface
+filtrable.
 
 ---
 
-## Modèles & plateformes LLM
+## 🔍 Comment c’est utilisé ?
 
-- **[OpenAI](https://openai.com)** `cloud` `api` `payant`
-  Modèles GPT (texte, image, audio, vision), API, assistants, outils de modération.
+1. Les fichiers `tools.json` et `prompts.json` sont hébergés ici sur GitHub.
+2. Le site front (`atlas-site`) les récupère en lecture seule (via `raw.githubusercontent.com`).
+3. À chaque Pull Request mergée :
+   - les données sont mises à jour
+   - le site est automatiquement synchronisé
 
-- **[Anthropic](https://www.anthropic.com)** `cloud` `api` `payant`
-  Modèles Claude (raisonnement, long contexte), très bons pour l’analyse de docs.
-
-- **[Google AI Studio (Gemini)](https://ai.google.dev)** `cloud` `api` `freemium`
-  Modèles Gemini (texte, image, audio, vidéo) via console web ou API.
-
-- **[Mistral AI](https://mistral.ai)** `cloud` `open-source` `api` `freemium`
-  Modèles légers & open-source (Mistral, Mixtral, Codestral) + API hébergée.
-
-- **[DeepSeek](https://www.deepseek.com/en)** `cloud` `open-source` `api` `freemium`
-  Modèles LLM low-cost (V3, R1, Janus…), app, API, versions open-source.
-
-- **[xAI / Grok](https://x.ai)** `cloud` `api` `freemium`
-  Modèles Grok intégrés à X (Twitter), orientés temps réel.
-
-- **[Cohere](https://cohere.com)** `cloud` `api` `payant`
-  Modèles pour le search, le RAG et les cas d’usage entreprise.
+Aucune logique complexe côté back : **GitHub est la source de vérité.**
 
 ---
 
-## IA locales / self-host
+## 🤝 Contribuer
 
-- **[Ollama](https://ollama.ai)** `self-host` `open-source` `gratuit`
-  Lance des modèles LLM localement (Mac / Linux / Windows) avec une simple commande.
+Les contributions sont les bienvenues 🎉
 
-- **[LM Studio](https://lmstudio.ai)** `desktop` `gratuit`
-  Interface desktop pour télécharger, tester et comparer des LLM en local.
+Tu peux :
 
-- **[Jan](https://jan.ai)** `desktop` `open-source` `gratuit`
-  Alternative locale à ChatGPT, avec modèles et historique stockés en local.
+- proposer un **nouvel outil IA**
+- proposer un **nouveau prompt**
+- améliorer une description, une catégorie, des labels, etc.
 
-- **[Text Generation WebUI](https://github.com/oobabooga/text-generation-webui)** `self-host` `open-source`
-  Interface web très complète pour héberger et tester des modèles de génération de texte.
+👉 Tout se fait via Pull Request.
+Les détails du format et des règles se trouvent dans [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
----
+En résumé :
 
-## Prompt engineering & observabilité
-
-- **[Promptmetheus](https://promptmetheus.com)** `cloud` `desktop` `freemium`
-  IDE pour le prompt engineering : datasets, tests, évaluations, multi-modèles, intégrations n8n/Make/Zapier.
-
-- **[PromptLayer](https://www.promptlayer.com)** `cloud` `freemium`
-  “Workbench” pour suivre, versionner et évaluer les prompts / appels API en prod.
-
-- **[LangSmith](https://www.langchain.com/langsmith)** `cloud` `payant`
-  Observabilité, traçage et évaluation pour apps construites avec LangChain.
-
-- **[promptfoo](https://www.promptfoo.dev)** `open-source` `self-host`
-  Outil de test / régression pour prompts (datasets, scoring, comparaison de modèles).
+- Un outil / prompt = **une PR** si possible
+- JSON propre, descriptif en français
+- Pas de spam ni de lien affilié
 
 ---
 
-## Automatisation & workflows
+## 🧰 Où voir le rendu ?
 
-- **[n8n](https://n8n.io)** `open-source` `self-host` `cloud` `freemium`
-  Automatisation visuelle, parfait pour orchestrer des appels LLM, webhooks et APIs.
+L’interface qui consomme ces données est disponible ici :
 
-- **[Make](https://www.make.com)** `cloud` `no-code` `freemium`
-  Plateforme d’automatisation visuelle pour connecter APIs + IA sans code.
-
-- **[Zapier](https://zapier.com)** `cloud` `no-code` `freemium`
-  Automatisation “classique” avec beaucoup d’intégrations SaaS, modules IA inclus.
-
-- **[LangFlow](https://www.langflow.org)** `open-source` `self-host`
-  Builder visuel pour graphes d’IA (RAG, agents simples) basé sur LangChain.
-
-- **[Flowise](https://flowiseai.com)** `open-source` `self-host`
-  Alternative à LangFlow pour designer des flux RAG / agents via UI node-based.
+➡️ **Site** : <https://atlas.voidcorp.io>
+➡️ **Code du site** : (repo `atlas-site` sur le compte `folpe`)
 
 ---
 
-## Agents & orchestrateurs
+## 🗺️ Roadmap (indicative)
 
-- **[LangGraph](https://langchain.com/langgraph)** `cloud` `open-source`
-  Orchestrateur d’agents basé sur des graphes pour workflows complexes et long-running.
+- [ ] Enrichir la liste d’outils IA (agents, automation, RAG, local LLM…)
+- [ ] Développer la partie prompts (use cases concrets, productivité, dev)
+- [ ] Ajouter des tags plus fins (stack, self-host, pricing…)
+- [ ] Exposer des stats publiques (outils les plus consultés, clics, etc.)
+- [ ] Automatiser la création de PR à partir d’un formulaire sur le site
 
-- **[CrewAI](https://www.crewai.com)** `open-source` `self-host`
-  Framework d’agents “multi-rôles” pour faire collaborer plusieurs IA sur une même tâche.
+Si tu veux donner un coup de main, tu peux :
 
-- **[Microsoft AutoGen](https://microsoft.github.io/autogen/)** `open-source`
-  Framework pour créer des systèmes multi-agents (IA ↔ IA ↔ outils).
+- ouvrir une issue avec des idées d’évolution
+- proposer une PR d’amélioration (données ou docs)
 
-- **[OpenAI Swarm](https://github.com/openai/swarm)** `open-source`
-  Mini-framework officiel pour orchestrer plusieurs “workers” IA légers.
-
----
-
-## Image, vidéo & audio
-
-- **[Midjourney](https://www.midjourney.com)** `cloud` `payant`
-  Génération d’images artistiques de haute qualité via Discord.
-
-- **[Flux (Black Forest Labs)](https://blackforestlabs.ai)** `cloud` `open-source` `freemium`
-  Modèles d’image haut de gamme (FLUX.1, etc.), API et modèles téléchargeables.
-
-- **[Stable Diffusion](https://stability.ai)** `open-source` `self-host` `cloud`
-  Suite de modèles génératifs open-source pour l’image (SDXL, etc.).
-
-- **[Leonardo AI](https://leonardo.ai)** `cloud` `freemium`
-  Génération d’images + outils de production (textures, assets jeux, etc.).
-
-- **[Runway](https://runwayml.com)** `cloud` `payant`
-  Montage vidéo, génération vidéo, effets IA pour créateurs.
-
-- **[Pika](https://pika.art)** `cloud` `freemium`
-  Génération vidéo courte (clips, cinématiques) à partir de texte / images.
-
-- **[HeyGen](https://www.heygen.com)** `cloud` `payant`
-  Avatars vidéo IA, lip-sync multilingue et clones de voix.
-
-- **[ElevenLabs](https://elevenlabs.io)** `cloud` `api` `freemium`
-  Synthèse vocale de haute qualité, clonage de voix, sound effects.
-
----
-
-## Dev & no-code assistés par IA
-
-- **[V0](https://v0.dev)** `cloud` `no-code` `freemium`
-  Génération d’UI (React/Tailwind) à partir de prompts, orienté dev front.
-
-- **[Bubble](https://bubble.io)** `cloud` `no-code` `freemium`
-  Plateforme no-code historique pour apps web, avec capacités IA.
-
-- **[Lovable](https://lovable.dev)** `cloud` `no-code` `freemium`
-  “AI software engineer” pour générer des apps full-stack et les pousser sur GitHub.
-
-- **[Bolt.new](https://bolt.new)** `cloud` `freemium`
-  Environnement en ligne pour prototyper rapidement des apps front/back avec IA.
-
-- **[Replit Agent](https://replit.com/agent)** `cloud` `freemium`
-  Assistant pour coder, exécuter et déployer depuis le navigateur.
-
----
-
-## RAG & bases vectorielles
-
-- **[Pinecone](https://www.pinecone.io)** `cloud` `api` `payant`
-  Base vectorielle managée, optimisée pour le RAG en production.
-
-- **[Weaviate](https://weaviate.io)** `open-source` `self-host` `cloud`
-  Moteur de search vectoriel, open-source, avec version hébergée.
-
-- **[Qdrant](https://qdrant.tech)** `open-source` `self-host` `cloud`
-  Base de données vectorielle performante et simple à déployer.
-
-- **[Supabase Vector](https://supabase.com)** `open-source` `self-host` `cloud`
-  Extension vectorielle sur Postgres, intégrée dans l’écosystème Supabase.
-
----
-
-## Productivité & assistants généralistes
-
-- **[Notion AI](https://www.notion.so/product/ai)** `cloud` `payant`
-  Résumés, génération de contenu et refactor directement dans Notion.
-
-- **[Microsoft Copilot](https://copilot.microsoft.com)** `cloud` `freemium`
-  Assistant IA intégré à l’écosystème Microsoft (Office, Windows, etc.).
-
-- **[Arc Search](https://arc.net)** `desktop` `mobile` `gratuit`
-  Navigateur + moteur de “browsing IA” orienté recherche et synthèse de pages web.
-
----
-
-## Contribution
-
-Les contributions sont bienvenues 🎉
-
-1. Forkez le dépôt.
-2. Ajoutez / modifiez un outil dans :
-   - `README.md` (section + labels cohérents)
-   - `tools.json` (même schéma que dans le dépôt)
-3. Ouvrez une Pull Request avec :
-   - une courte description de l’outil,
-   - la catégorie envisagée,
-   - pourquoi il mérite sa place dans la liste.
-
-Objectif : garder une liste **utile, compacte et vraiment utilisée**, pas un annuaire géant.
+Merci d’aider à faire d’Atlas une ressource vraiment utile 🙏
