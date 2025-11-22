@@ -6,6 +6,9 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 
 ### Autres
 
+- Update prompts.json to include example inputs and outputs for "Reputation Power Check" and "Business Fragility Check", enhancing the clarity and usability of the evaluation frameworks for personal branding and business analysis.
+- Add new prompts for "Reputation Power Check" and "Business Fragility Check" to prompts.json, expanding the toolset for personal branding and business analysis with structured evaluation frameworks.
+- Enhance prompts.json by adding example inputs and outputs for existing prompts, improving clarity and usability for users analyzing SaaS ideas and automation tasks.
 - Update changelog workflow to use git-cliff-action@v4
 - Merge pull request #3 from ccamel/ci/lint-json
 
@@ -33,5 +36,13 @@ Add MIT License to the project
 - Add tools.json file with comprehensive listings of AI tools in French, categorized by type and including descriptions, URLs, and labels.
 - Initial commit of the French version of the Amazing AI Tools README, including detailed sections on various AI tools, their labels, and contribution guidelines.
 - First commit
+
+### Corrigé
+
+- Update changelog workflow to create a pull request for changelog updates instead of direct commits, enhancing version control and collaboration.
+
+### Documentation
+
+- Update changelog
 
 
