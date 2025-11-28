@@ -8,7 +8,7 @@
     "readTime": 5,
     "difficulty": "beginner",
     "slug": "debuter-avec-les-prompts",
-    "date": "2024-03-15"
+    "date": "2025-11-28"
   },
   {
     "id": "2",
@@ -19,7 +19,7 @@
     "readTime": 10,
     "difficulty": "intermediate",
     "slug": "prompt-engineering-101",
-    "date": "2024-03-18"
+    "date": "2025-11-28"
   },
   {
     "id": "3",
@@ -30,6 +30,6 @@
     "readTime": 8,
     "difficulty": "advanced",
     "slug": "installer-agent-mcp",
-    "date": "2024-03-20"
+    "date": "2025-11-28"
   }
 ]
