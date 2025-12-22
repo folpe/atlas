@@ -3,6 +3,7 @@
     "id": "openai",
     "name": "OpenAI",
     "category": "penser_decider",
+    "link": "https://openai.com",
     "description": "Modèles GPT pour raisonner, écrire, structurer et explorer rapidement.",
     "why": "Quand tu veux clarifier une idée ou tester un raisonnement sans tourner en rond."
   },
@@ -10,6 +11,7 @@
     "id": "anthropic",
     "name": "Claude (Anthropic)",
     "category": "penser_decider",
+    "link": "https://www.anthropic.com",
     "description": "Modèles orientés raisonnement long, analyse et écriture structurée.",
     "why": "Pour aller au fond d’un sujet ou prendre une décision complexe sans biais."
   },
@@ -17,6 +19,7 @@
     "id": "google_gemini",
     "name": "Google Gemini",
     "category": "penser_decider",
+    "link": "https://deepmind.google/technologies/gemini",
     "description": "Modèles multimodaux intégrés à l’écosystème Google.",
     "why": "Utile pour croiser des points de vue et confronter une idée sous un autre angle."
   },
@@ -24,6 +27,7 @@
     "id": "deepseek",
     "name": "DeepSeek",
     "category": "penser_decider",
+    "link": "https://www.deepseek.com",
     "description": "Modèles performants et accessibles, orientés raisonnement et code.",
     "why": "À explorer quand tu veux tester une alternative efficace à faible coût."
   },
@@ -32,6 +36,7 @@
     "id": "v0",
     "name": "v0",
     "category": "construire_vite",
+    "link": "https://v0.dev",
     "description": "Génération d’UI React/Tailwind à partir de prompts.",
     "why": "Passer d’une idée à une interface concrète en quelques minutes."
   },
@@ -39,6 +44,7 @@
     "id": "lovable",
     "name": "Lovable",
     "category": "construire_vite",
+    "link": "https://lovable.dev",
     "description": "Générateur d’apps full-stack assisté par IA.",
     "why": "Prototyper un produit complet sans sur-architecturer trop tôt."
   },
@@ -46,6 +52,7 @@
     "id": "bolt",
     "name": "Bolt.new",
     "category": "construire_vite",
+    "link": "https://bolt.new",
     "description": "Environnement de prototypage rapide front/back dans le navigateur.",
     "why": "Tester une idée technique sans installer ni configurer quoi que ce soit."
   },
@@ -53,6 +60,7 @@
     "id": "figma_make",
     "name": "Figma Make",
     "category": "construire_vite",
+    "link": "https://www.figma.com",
     "description": "Création et itération rapide de design via IA dans Figma.",
     "why": "Explorer des pistes visuelles sans rester bloqué sur la page blanche."
   },
@@ -61,6 +69,7 @@
     "id": "n8n",
     "name": "n8n",
     "category": "automatiser",
+    "link": "https://n8n.io",
     "description": "Automatisation open-source pour orchestrer APIs, données et IA.",
     "why": "Gagner du temps sans perdre le contrôle ni dépendre d’une boîte noire."
   },
@@ -68,6 +77,7 @@
     "id": "gumloop",
     "name": "Gumloop",
     "category": "automatiser",
+    "link": "https://www.gumloop.com",
     "description": "Automatisation assistée par IA orientée productivité.",
     "why": "Tester rapidement des automatisations quand la vitesse prime."
   },
@@ -76,6 +86,7 @@
     "id": "promptmetheus",
     "name": "Promptmetheus",
     "category": "qualite_clarte",
+    "link": "https://promptmetheus.com",
     "description": "IDE pour tester, comparer et structurer des prompts.",
     "why": "Arrêter l’approximation et comprendre ce qui fonctionne vraiment."
   },
@@ -83,6 +94,7 @@
     "id": "promptlayer",
     "name": "PromptLayer",
     "category": "qualite_clarte",
+    "link": "https://promptlayer.com",
     "description": "Suivi et versioning des prompts et appels IA.",
     "why": "Garder une trace claire de ce qui marche et de ce qui casse."
   },
@@ -91,6 +103,7 @@
     "id": "midjourney",
     "name": "Midjourney",
     "category": "creer_montrer",
+    "link": "https://www.midjourney.com",
     "description": "Génération d’images artistiques haut de gamme.",
     "why": "Donner une identité forte à une idée dès le départ."
   },
@@ -98,6 +111,7 @@
     "id": "flux",
     "name": "Flux (Black Forest Labs)",
     "category": "creer_montrer",
+    "link": "https://blackforestlabs.ai",
     "description": "Modèles de génération d’images performants et flexibles.",
     "why": "Créer des visuels propres et exploitables en production."
   },
@@ -105,6 +119,7 @@
     "id": "leonardo",
     "name": "Leonardo AI",
     "category": "creer_montrer",
+    "link": "https://leonardo.ai",
     "description": "Génération d’assets visuels orientés production.",
     "why": "Produire rapidement des visuels cohérents sans designer dédié."
   },
@@ -112,6 +127,7 @@
     "id": "heygen",
     "name": "HeyGen",
     "category": "creer_montrer",
+    "link": "https://www.heygen.com",
     "description": "Création de vidéos avec avatars IA.",
     "why": "Expliquer un produit ou une idée sans se cacher derrière des slides."
   },
@@ -119,6 +135,7 @@
     "id": "elevenlabs",
     "name": "ElevenLabs",
     "category": "creer_montrer",
+    "link": "https://elevenlabs.io",
     "description": "Synthèse vocale réaliste et clonage de voix.",
     "why": "Ajouter une voix crédible sans matériel ni studio."
   },
@@ -127,6 +144,7 @@
     "id": "typefully",
     "name": "Typefully",
     "category": "diffuser",
+    "link": "https://typefully.com",
     "description": "Planification et écriture de contenus pour X / LinkedIn.",
     "why": "Partager régulièrement sans y consacrer trop de charge mentale."
   },
@@ -134,6 +152,7 @@
     "id": "buffer",
     "name": "Buffer",
     "category": "diffuser",
+    "link": "https://buffer.com",
     "description": "Planification simple de contenus multi-plateformes.",
     "why": "Programmer à l’avance pour rester constant sans friction."
   },
@@ -142,6 +161,7 @@
     "id": "supabase_vector",
     "name": "Supabase Vector",
     "category": "infra_pragmatique",
+    "link": "https://supabase.com/docs/guides/ai/vector-columns",
     "description": "Stockage vectoriel intégré à Postgres.",
     "why": "Mettre du RAG en place sans ajouter une brique inutile."
   },
@@ -149,6 +169,7 @@
     "id": "ollama",
     "name": "Ollama",
     "category": "infra_pragmatique",
+    "link": "https://ollama.com",
     "description": "Exécution de modèles LLM en local.",
     "why": "Garder le contrôle et expérimenter sans dépendre du cloud."
   },
@@ -156,6 +177,7 @@
     "id": "claude_code",
     "name": "Claude Code",
     "category": "infra_pragmatique",
+    "link": "https://docs.anthropic.com/en/docs/claude-code",
     "description": "Assistant IA intégré au code et au refactoring.",
     "why": "Aller plus vite sans sacrifier la lisibilité ni la logique."
   }
