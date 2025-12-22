@@ -6,6 +6,7 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 
 ### Ajouté
 
+- Add links to AI tools in tools.json for improved accessibility and resource navigation.
 - Update prompts with new hooks, descriptions, and examples for various business and introspection tools, enhancing user engagement and clarity.
 - Add new prompt for Personal Branding strategy on social media, enhancing marketing resources.
 - Add 'Content Autopsy' and 'Founder Energy Audit' prompts, and update LLM models and names for existing prompts.
@@ -55,6 +56,7 @@ Add MIT License to the project
 
 ### Documentation
 
+- Update changelog (#12)
 - Update changelog (#11)
 - Update changelog (#10)
 - Update changelog (#8)
